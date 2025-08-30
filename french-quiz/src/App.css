@@ -217,6 +217,105 @@ main {
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
+.mode-selector {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.mode-btn:hover {
+  background: #f0f4ff;
+}
+
+.mode-btn.active {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.mode-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.multiple-choice-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  padding: 15px;
+  font-size: 1.05rem;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.option-btn:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #667eea;
+}
+
+.option-btn.selected {
+  background: #f0f4ff;
+  border-color: #667eea;
+  font-weight: 600;
+}
+
+.option-btn.correct {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.option-btn.incorrect {
+  background: #f8d7da;
+  border-color: #dc3545;
+  color: #721c24;
+}
+
+.option-btn:disabled {
+  cursor: not-allowed;
+}
+
+.result-message {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 600px) {
   .app-header h1 {
     font-size: 2rem;
@@ -228,5 +327,13 @@ main {
   
   main {
     padding: 20px;
+  }
+  
+  .mode-selector {
+    flex-direction: column;
+  }
+  
+  .mode-btn {
+    width: 100%;
   }
 }
