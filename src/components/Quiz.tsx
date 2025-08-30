@@ -51,38 +51,6 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
     }
   };
 
-  const formatTranslations = (question: Question): React.JSX.Element | null => {
-    switch (question.type) {
-      case "conjugation":
-        if (question.verbTranslation) {
-          return (
-            <div className="translations">
-              <span className="verb-translation">
-                {question.verb}: {question.verbTranslation.english} / {question.verbTranslation.japanese}
-              </span>
-            </div>
-          );
-        }
-        break;
-      case "gender-agreement":
-      case "number-agreement":
-        if (question.translations) {
-          return (
-            <div className="translations">
-              <div className="noun-translation">
-                {question.noun.replace(/^(le|la|les|l')\s/, '')}: {question.translations.noun.english} / {question.translations.noun.japanese}
-              </div>
-              <div className="adjective-translation">
-                {question.adjective}: {question.translations.adjective.english} / {question.translations.adjective.japanese}
-              </div>
-            </div>
-          );
-        }
-        break;
-    }
-    return null;
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -210,7 +178,6 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
 
       <div className="question-card">
         <h3 className="question">{formatQuestion(currentQuestion)}</h3>
-        {formatTranslations(currentQuestion)}
 
         <form onSubmit={handleSubmit}>
           {quizMode === "typing" ? (

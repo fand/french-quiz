@@ -90,11 +90,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'nouveau',
     correctAnswer: 'la nouvelle voiture',
-    hint: 'nouveau becomes nouvelle in feminine',
-    translations: {
-      noun: { english: 'car', japanese: '車' },
-      adjective: { english: 'new', japanese: '新しい' }
-    }
+    hint: 'nouveau becomes nouvelle in feminine'
   },
   {
     type: 'gender-agreement',
@@ -102,11 +98,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'blanc',
     correctAnswer: 'le chat blanc',
-    hint: 'blanc stays the same in masculine',
-    translations: {
-      noun: { english: 'cat', japanese: '猫' },
-      adjective: { english: 'white', japanese: '白い' }
-    }
+    hint: 'blanc stays the same in masculine'
   },
   {
     type: 'gender-agreement',
@@ -114,11 +106,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'grand',
     correctAnswer: 'la grande maison',
-    hint: 'add -e for feminine',
-    translations: {
-      noun: { english: 'house', japanese: '家' },
-      adjective: { english: 'big/tall', japanese: '大きい・高い' }
-    }
+    hint: 'add -e for feminine'
   },
   {
     type: 'gender-agreement',
@@ -126,11 +114,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'intéressant',
     correctAnswer: 'le livre intéressant',
-    hint: 'no change for masculine',
-    translations: {
-      noun: { english: 'book', japanese: '本' },
-      adjective: { english: 'interesting', japanese: '面白い' }
-    }
+    hint: 'no change for masculine'
   },
   {
     type: 'gender-agreement',
@@ -138,11 +122,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'beau',
     correctAnswer: 'la belle table',
-    hint: 'beau becomes belle in feminine',
-    translations: {
-      noun: { english: 'table', japanese: 'テーブル' },
-      adjective: { english: 'beautiful/handsome', japanese: '美しい・ハンサムな' }
-    }
+    hint: 'beau becomes belle in feminine'
   },
   {
     type: 'gender-agreement',
@@ -150,11 +130,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'heureux',
     correctAnswer: 'la femme heureuse',
-    hint: '-eux becomes -euse in feminine',
-    translations: {
-      noun: { english: 'woman', japanese: '女性' },
-      adjective: { english: 'happy', japanese: '幸せな' }
-    }
+    hint: '-eux becomes -euse in feminine'
   },
   {
     type: 'gender-agreement',
@@ -162,11 +138,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'sportif',
     correctAnswer: 'le garçon sportif',
-    hint: 'no change for masculine',
-    translations: {
-      noun: { english: 'boy', japanese: '男の子' },
-      adjective: { english: 'sporty/athletic', japanese: 'スポーツ好きな' }
-    }
+    hint: 'no change for masculine'
   },
   {
     type: 'gender-agreement',
@@ -174,11 +146,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'sportif',
     correctAnswer: 'la fille sportive',
-    hint: '-if becomes -ive in feminine',
-    translations: {
-      noun: { english: 'girl', japanese: '女の子' },
-      adjective: { english: 'sporty/athletic', japanese: 'スポーツ好きな' }
-    }
+    hint: '-if becomes -ive in feminine'
   },
 
   // Number agreement questions
@@ -188,11 +156,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'noir',
     correctAnswer: 'les chats noirs',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'cats', japanese: '猫たち' },
-      adjective: { english: 'black', japanese: '黒い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -200,11 +164,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'grande',
     correctAnswer: 'les grandes maisons',
-    hint: 'add -s for plural (already feminine with -e)',
-    translations: {
-      noun: { english: 'houses', japanese: '家々' },
-      adjective: { english: 'big/tall', japanese: '大きい・高い' }
-    }
+    hint: 'add -s for plural (already feminine with -e)'
   },
   {
     type: 'number-agreement',
@@ -212,11 +172,7 @@ export const questions: Question[] = [
     number: 'singular',
     adjective: 'rapide',
     correctAnswer: 'le cheval rapide',
-    hint: 'no change for singular',
-    translations: {
-      noun: { english: 'horse', japanese: '馬' },
-      adjective: { english: 'fast', japanese: '速い' }
-    }
+    hint: 'no change for singular'
   },
   {
     type: 'number-agreement',
@@ -224,11 +180,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'rapide',
     correctAnswer: 'les chevaux rapides',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'horses', japanese: '馬たち' },
-      adjective: { english: 'fast', japanese: '速い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -236,11 +188,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'nouveau',
     correctAnswer: 'les nouveaux hommes',
-    hint: '-eau becomes -eaux in plural',
-    translations: {
-      noun: { english: 'men', japanese: '男性たち' },
-      adjective: { english: 'new', japanese: '新しい' }
-    }
+    hint: '-eau becomes -eaux in plural'
   },
   {
     type: 'number-agreement',
@@ -248,11 +196,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'belle',
     correctAnswer: 'les belles femmes',
-    hint: 'add -s for plural (already feminine)',
-    translations: {
-      noun: { english: 'women', japanese: '女性たち' },
-      adjective: { english: 'beautiful/handsome', japanese: '美しい・ハンサムな' }
-    }
+    hint: 'add -s for plural (already feminine)'
   },
   {
     type: 'number-agreement',
@@ -260,11 +204,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'intelligent',
     correctAnswer: 'les enfants intelligents',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'children', japanese: '子供たち' },
-      adjective: { english: 'intelligent', japanese: '賢明な' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -272,11 +212,7 @@ export const questions: Question[] = [
     number: 'singular',
     adjective: 'beau',
     correctAnswer: 'le beau jardin',
-    hint: 'no change for singular',
-    translations: {
-      noun: { english: 'garden', japanese: '庭' },
-      adjective: { english: 'beautiful/handsome', japanese: '美しい・ハンサムな' }
-    }
+    hint: 'no change for singular'
   },
 
   // Additional conjugation questions - present tense
@@ -600,11 +536,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'long',
     correctAnswer: 'la longue rue',
-    hint: 'long → longue in feminine',
-    translations: {
-      noun: { english: 'street', japanese: '通り' },
-      adjective: { english: 'long', japanese: '長い' }
-    }
+    hint: 'long → longue in feminine'
   },
   {
     type: 'gender-agreement',
@@ -612,11 +544,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'difficile',
     correctAnswer: 'le problème difficile',
-    hint: 'difficile doesn\'t change',
-    translations: {
-      noun: { english: 'problem', japanese: '問題' },
-      adjective: { english: 'difficult', japanese: '難しい' }
-    }
+    hint: 'difficile doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -624,11 +552,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'simple',
     correctAnswer: 'la solution simple',
-    hint: 'simple doesn\'t change',
-    translations: {
-      noun: { english: 'solution', japanese: '解決策' },
-      adjective: { english: 'simple', japanese: '簡単な' }
-    }
+    hint: 'simple doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -636,11 +560,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'dur',
     correctAnswer: 'le dur travail',
-    hint: 'dur stays the same',
-    translations: {
-      noun: { english: 'work', japanese: '仕事' },
-      adjective: { english: 'hard/tough', japanese: '難しい・きつい' }
-    }
+    hint: 'dur stays the same'
   },
   {
     type: 'gender-agreement',
@@ -648,11 +568,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'dur',
     correctAnswer: 'la dure vie',
-    hint: 'dur → dure in feminine',
-    translations: {
-      noun: { english: 'life', japanese: '人生' },
-      adjective: { english: 'hard/tough', japanese: '難しい・きつい' }
-    }
+    hint: 'dur → dure in feminine'
   },
   {
     type: 'gender-agreement',
@@ -660,11 +576,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'ancien',
     correctAnswer: 'l\'ancien château',
-    hint: 'ancien before noun means former',
-    translations: {
-      noun: { english: 'castle', japanese: '城' },
-      adjective: { english: 'old/ancient', japanese: '古い・古代の' }
-    }
+    hint: 'ancien before noun means former'
   },
   {
     type: 'gender-agreement',
@@ -672,11 +584,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'ancien',
     correctAnswer: 'l\'ancienne ville',
-    hint: 'ancien → ancienne in feminine',
-    translations: {
-      noun: { english: 'city/town', japanese: '都市' },
-      adjective: { english: 'old/ancient', japanese: '古い・古代の' }
-    }
+    hint: 'ancien → ancienne in feminine'
   },
   {
     type: 'gender-agreement',
@@ -684,11 +592,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'européen',
     correctAnswer: 'le pays européen',
-    hint: 'européen stays the same',
-    translations: {
-      noun: { english: 'country', japanese: '国' },
-      adjective: { english: 'European', japanese: 'ヨーロッパの' }
-    }
+    hint: 'européen stays the same'
   },
   {
     type: 'gender-agreement',
@@ -696,11 +600,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'européen',
     correctAnswer: 'la nation européenne',
-    hint: 'européen → européenne',
-    translations: {
-      noun: { english: 'nation', japanese: '国家' },
-      adjective: { english: 'European', japanese: 'ヨーロッパの' }
-    }
+    hint: 'européen → européenne'
   },
   {
     type: 'gender-agreement',
@@ -708,11 +608,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'sérieux',
     correctAnswer: 'le professeur sérieux',
-    hint: '-eux stays the same',
-    translations: {
-      noun: { english: 'teacher/professor', japanese: '先生' },
-      adjective: { english: 'serious', japanese: '真面目な' }
-    }
+    hint: '-eux stays the same'
   },
   {
     type: 'gender-agreement',
@@ -720,11 +616,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'sérieux',
     correctAnswer: 'la personne sérieuse',
-    hint: '-eux → -euse',
-    translations: {
-      noun: { english: 'person', japanese: '人' },
-      adjective: { english: 'serious', japanese: '真面目な' }
-    }
+    hint: '-eux → -euse'
   },
   {
     type: 'gender-agreement',
@@ -732,11 +624,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'américain',
     correctAnswer: 'le film américain',
-    hint: 'américain stays the same',
-    translations: {
-      noun: { english: 'film/movie', japanese: '映画' },
-      adjective: { english: 'American', japanese: 'アメリカの' }
-    }
+    hint: 'américain stays the same'
   },
   {
     type: 'gender-agreement',
@@ -744,11 +632,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'américain',
     correctAnswer: 'la série américaine',
-    hint: '-ain → -aine',
-    translations: {
-      noun: { english: 'series', japanese: 'シリーズ' },
-      adjective: { english: 'American', japanese: 'アメリカの' }
-    }
+    hint: '-ain → -aine'
   },
   {
     type: 'gender-agreement',
@@ -756,11 +640,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'cher',
     correctAnswer: 'le restaurant cher',
-    hint: 'cher stays the same',
-    translations: {
-      noun: { english: 'restaurant', japanese: 'レストラン' },
-      adjective: { english: 'expensive/dear', japanese: '高価な・愛しい' }
-    }
+    hint: 'cher stays the same'
   },
   {
     type: 'gender-agreement',
@@ -768,11 +648,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'cher',
     correctAnswer: 'la boutique chère',
-    hint: 'cher → chère',
-    translations: {
-      noun: { english: 'shop/boutique', japanese: '店' },
-      adjective: { english: 'expensive/dear', japanese: '高価な・愛しい' }
-    }
+    hint: 'cher → chère'
   },
   {
     type: 'gender-agreement',
@@ -780,11 +656,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'moderne',
     correctAnswer: 'le musée moderne',
-    hint: 'moderne doesn\'t change',
-    translations: {
-      noun: { english: 'museum', japanese: '博物館' },
-      adjective: { english: 'modern', japanese: '現代的な' }
-    }
+    hint: 'moderne doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -792,11 +664,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'moderne',
     correctAnswer: 'la galerie moderne',
-    hint: 'moderne doesn\'t change',
-    translations: {
-      noun: { english: 'gallery', japanese: 'ギャラリー' },
-      adjective: { english: 'modern', japanese: '現代的な' }
-    }
+    hint: 'moderne doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -804,11 +672,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'public',
     correctAnswer: 'le parc public',
-    hint: 'public stays the same',
-    translations: {
-      noun: { english: 'park', japanese: '公園' },
-      adjective: { english: 'public', japanese: '公的な' }
-    }
+    hint: 'public stays the same'
   },
   {
     type: 'gender-agreement',
@@ -816,11 +680,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'public',
     correctAnswer: 'la place publique',
-    hint: 'public → publique',
-    translations: {
-      noun: { english: 'square/place', japanese: '広場' },
-      adjective: { english: 'public', japanese: '公的な' }
-    }
+    hint: 'public → publique'
   },
   {
     type: 'gender-agreement',
@@ -828,11 +688,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'local',
     correctAnswer: 'le marché local',
-    hint: 'local stays the same',
-    translations: {
-      noun: { english: 'market', japanese: '市場' },
-      adjective: { english: 'local', japanese: '地元の' }
-    }
+    hint: 'local stays the same'
   },
   {
     type: 'gender-agreement',
@@ -840,11 +696,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'local',
     correctAnswer: 'la production locale',
-    hint: 'local → locale',
-    translations: {
-      noun: { english: 'production', japanese: '生産' },
-      adjective: { english: 'local', japanese: '地元の' }
-    }
+    hint: 'local → locale'
   },
 
   // More number agreement questions
@@ -854,11 +706,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'vert',
     correctAnswer: 'les arbres verts',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'trees', japanese: '木々' },
-      adjective: { english: 'green', japanese: '緑の' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -866,11 +714,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'rouge',
     correctAnswer: 'les fleurs rouges',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'flowers', japanese: '花々' },
-      adjective: { english: 'red', japanese: '赤い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -878,11 +722,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'petit',
     correctAnswer: 'les petits oiseaux',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'birds', japanese: '鳥たち' },
-      adjective: { english: 'small', japanese: '小さい' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -890,11 +730,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'haute',
     correctAnswer: 'les hautes montagnes',
-    hint: 'add -s (already feminine)',
-    translations: {
-      noun: { english: 'mountains', japanese: '山々' },
-      adjective: { english: 'high/tall', japanese: '高い' }
-    }
+    hint: 'add -s (already feminine)'
   },
   {
     type: 'number-agreement',
@@ -902,11 +738,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'profond',
     correctAnswer: 'les lacs profonds',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'lakes', japanese: '湖々' },
-      adjective: { english: 'deep', japanese: '深い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -914,11 +746,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'longue',
     correctAnswer: 'les longues rivières',
-    hint: 'add -s (already feminine)',
-    translations: {
-      noun: { english: 'rivers', japanese: '川々' },
-      adjective: { english: 'long', japanese: '長い' }
-    }
+    hint: 'add -s (already feminine)'
   },
   {
     type: 'number-agreement',
@@ -926,11 +754,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'national',
     correctAnswer: 'les journaux nationaux',
-    hint: '-al → -aux in plural',
-    translations: {
-      noun: { english: 'newspapers', japanese: '新聞紙' },
-      adjective: { english: 'national', japanese: '国内の' }
-    }
+    hint: '-al → -aux in plural'
   },
   {
     type: 'number-agreement',
@@ -938,11 +762,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'sauvage',
     correctAnswer: 'les animaux sauvages',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'animals', japanese: '動物たち' },
-      adjective: { english: 'wild', japanese: '野生の' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -950,11 +770,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'royal',
     correctAnswer: 'les châteaux royaux',
-    hint: '-al → -aux',
-    translations: {
-      noun: { english: 'castles', japanese: '城々' },
-      adjective: { english: 'royal', japanese: '王室の' }
-    }
+    hint: '-al → -aux'
   },
   {
     type: 'number-agreement',
@@ -962,11 +778,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'blanc',
     correctAnswer: 'les bateaux blancs',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'boats', japanese: '船々' },
-      adjective: { english: 'white', japanese: '白い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -974,11 +786,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'manuel',
     correctAnswer: 'les travaux manuels',
-    hint: '-el → -els',
-    translations: {
-      noun: { english: 'works/construction', japanese: '工事' },
-      adjective: { english: 'manual', japanese: '手動の' }
-    }
+    hint: '-el → -els'
   },
   {
     type: 'number-agreement',
@@ -986,11 +794,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'dangereux',
     correctAnswer: 'les jeux dangereux',
-    hint: '-eux doesn\'t change in plural',
-    translations: {
-      noun: { english: 'games', japanese: 'ゲーム' },
-      adjective: { english: 'dangerous', japanese: '危険な' }
-    }
+    hint: '-eux doesn\'t change in plural'
   },
   {
     type: 'number-agreement',
@@ -998,11 +802,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'rouge',
     correctAnswer: 'les feux rouges',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'fires/lights', japanese: '火・信号' },
-      adjective: { english: 'red', japanese: '赤い' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -1010,11 +810,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'sincère',
     correctAnswer: 'les voeux sincères',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'wishes', japanese: '願い' },
-      adjective: { english: 'sincere', japanese: '誠実な' }
-    }
+    hint: 'add -s for plural'
   },
   {
     type: 'number-agreement',
@@ -1022,11 +818,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'bleu',
     correctAnswer: 'les cieux bleus',
-    hint: 'add -s for plural',
-    translations: {
-      noun: { english: 'skies', japanese: '空' },
-      adjective: { english: 'blue', japanese: '青い' }
-    }
+    hint: 'add -s for plural'
   },
 
   // Mixed advanced questions
@@ -2024,11 +1816,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'passionnant',
     correctAnswer: 'l\'histoire passionnante',
-    hint: '-ant becomes -ante in feminine',
-    translations: {
-      noun: { english: 'story/history', japanese: '話・歴史' },
-      adjective: { english: 'exciting', japanese: '興奮させる' }
-    }
+    hint: '-ant becomes -ante in feminine'
   },
   {
     type: 'gender-agreement',
@@ -2036,11 +1824,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'passionnant',
     correctAnswer: 'le roman passionnant',
-    hint: 'passionnant stays the same',
-    translations: {
-      noun: { english: 'novel', japanese: '小説' },
-      adjective: { english: 'exciting', japanese: '興奮させる' }
-    }
+    hint: 'passionnant stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2048,11 +1832,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'exact',
     correctAnswer: 'la réponse exacte',
-    hint: 'exact → exacte',
-    translations: {
-      noun: { english: 'answer', japanese: '答え' },
-      adjective: { english: 'exact', japanese: '正確な' }
-    }
+    hint: 'exact → exacte'
   },
   {
     type: 'gender-agreement',
@@ -2060,11 +1840,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'exact',
     correctAnswer: 'le calcul exact',
-    hint: 'exact stays the same',
-    translations: {
-      noun: { english: 'calculation', japanese: '計算' },
-      adjective: { english: 'exact', japanese: '正確な' }
-    }
+    hint: 'exact stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2072,11 +1848,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'bas',
     correctAnswer: 'la basse température',
-    hint: 'bas → basse',
-    translations: {
-      noun: { english: 'temperature', japanese: '温度' },
-      adjective: { english: 'low', japanese: '低い' }
-    }
+    hint: 'bas → basse'
   },
   {
     type: 'gender-agreement',
@@ -2084,11 +1856,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'bas',
     correctAnswer: 'le bas prix',
-    hint: 'bas stays the same',
-    translations: {
-      noun: { english: 'price', japanese: '価格' },
-      adjective: { english: 'low', japanese: '低い' }
-    }
+    hint: 'bas stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2096,11 +1864,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'haut',
     correctAnswer: 'la haute montagne',
-    hint: 'haut → haute',
-    translations: {
-      noun: { english: 'mountain', japanese: '山' },
-      adjective: { english: 'high', japanese: '高い' }
-    }
+    hint: 'haut → haute'
   },
   {
     type: 'gender-agreement',
@@ -2108,11 +1872,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'haut',
     correctAnswer: 'le haut bâtiment',
-    hint: 'haut stays the same',
-    translations: {
-      noun: { english: 'building', japanese: '建物' },
-      adjective: { english: 'high', japanese: '高い' }
-    }
+    hint: 'haut stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2120,11 +1880,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'doux',
     correctAnswer: 'la douce musique',
-    hint: 'doux → douce',
-    translations: {
-      noun: { english: 'music', japanese: '音楽' },
-      adjective: { english: 'soft/sweet', japanese: '柔らかい・甘い' }
-    }
+    hint: 'doux → douce'
   },
   {
     type: 'gender-agreement',
@@ -2132,11 +1888,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'doux',
     correctAnswer: 'le doux climat',
-    hint: 'doux stays the same',
-    translations: {
-      noun: { english: 'climate', japanese: '気候' },
-      adjective: { english: 'soft/sweet', japanese: '柔らかい・甘い' }
-    }
+    hint: 'doux stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2144,11 +1896,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'faux',
     correctAnswer: 'la fausse voix',
-    hint: 'faux → fausse',
-    translations: {
-      noun: { english: 'voice', japanese: '声' },
-      adjective: { english: 'false', japanese: '偽の' }
-    }
+    hint: 'faux → fausse'
   },
   {
     type: 'gender-agreement',
@@ -2156,11 +1904,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'faux',
     correctAnswer: 'le faux témoignage',
-    hint: 'faux stays the same',
-    translations: {
-      noun: { english: 'testimony', japanese: '証言' },
-      adjective: { english: 'false', japanese: '偽の' }
-    }
+    hint: 'faux stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2168,11 +1912,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'récent',
     correctAnswer: 'la récente découverte',
-    hint: 'récent → récente',
-    translations: {
-      noun: { english: 'discovery', japanese: '発見' },
-      adjective: { english: 'recent', japanese: '最近の' }
-    }
+    hint: 'récent → récente'
   },
   {
     type: 'gender-agreement',
@@ -2180,11 +1920,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'récent',
     correctAnswer: 'le récent événement',
-    hint: 'récent stays the same',
-    translations: {
-      noun: { english: 'event', japanese: 'イベント' },
-      adjective: { english: 'recent', japanese: '最近の' }
-    }
+    hint: 'récent stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2192,11 +1928,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'vif',
     correctAnswer: 'la vive couleur',
-    hint: 'vif → vive',
-    translations: {
-      noun: { english: 'color', japanese: '色' },
-      adjective: { english: 'bright/lively', japanese: '鮮やかな' }
-    }
+    hint: 'vif → vive'
   },
   {
     type: 'gender-agreement',
@@ -2204,11 +1936,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'vif',
     correctAnswer: 'le vif débat',
-    hint: 'vif stays the same',
-    translations: {
-      noun: { english: 'debate', japanese: '討論' },
-      adjective: { english: 'bright/lively', japanese: '鮮やかな' }
-    }
+    hint: 'vif stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2216,11 +1944,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'bref',
     correctAnswer: 'la brève discussion',
-    hint: 'bref → brève',
-    translations: {
-      noun: { english: 'discussion', japanese: '議論' },
-      adjective: { english: 'brief', japanese: '短い' }
-    }
+    hint: 'bref → brève'
   },
   {
     type: 'gender-agreement',
@@ -2228,11 +1952,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'bref',
     correctAnswer: 'le bref résumé',
-    hint: 'bref stays the same',
-    translations: {
-      noun: { english: 'summary', japanese: '要約' },
-      adjective: { english: 'brief', japanese: '短い' }
-    }
+    hint: 'bref stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2240,11 +1960,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'secret',
     correctAnswer: 'la réunion secrète',
-    hint: 'secret → secrète',
-    translations: {
-      noun: { english: 'meeting', japanese: '会議' },
-      adjective: { english: 'secret', japanese: '秘密の' }
-    }
+    hint: 'secret → secrète'
   },
   {
     type: 'gender-agreement',
@@ -2252,11 +1968,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'secret',
     correctAnswer: 'le code secret',
-    hint: 'secret stays the same',
-    translations: {
-      noun: { english: 'code', japanese: 'コード' },
-      adjective: { english: 'secret', japanese: '秘密の' }
-    }
+    hint: 'secret stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2264,11 +1976,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'complet',
     correctAnswer: 'la méthode complète',
-    hint: 'complet → complète',
-    translations: {
-      noun: { english: 'method', japanese: '方法' },
-      adjective: { english: 'complete', japanese: '完全な' }
-    }
+    hint: 'complet → complète'
   },
   {
     type: 'gender-agreement',
@@ -2276,11 +1984,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'complet',
     correctAnswer: 'l\'ensemble complet',
-    hint: 'complet stays the same',
-    translations: {
-      noun: { english: 'set/group', japanese: 'セット・グループ' },
-      adjective: { english: 'complete', japanese: '完全な' }
-    }
+    hint: 'complet stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2288,11 +1992,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'violet',
     correctAnswer: 'la robe violette',
-    hint: 'violet → violette',
-    translations: {
-      noun: { english: 'dress', japanese: 'ドレス' },
-      adjective: { english: 'purple', japanese: '紫の' }
-    }
+    hint: 'violet → violette'
   },
   {
     type: 'gender-agreement',
@@ -2300,11 +2000,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'violet',
     correctAnswer: 'le costume violet',
-    hint: 'violet stays the same',
-    translations: {
-      noun: { english: 'suit', japanese: 'スーツ' },
-      adjective: { english: 'purple', japanese: '紫の' }
-    }
+    hint: 'violet stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2312,11 +2008,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'rigolo',
     correctAnswer: 'l\'histoire rigolote',
-    hint: 'rigolo → rigolote',
-    translations: {
-      noun: { english: 'story/history', japanese: '話・歴史' },
-      adjective: { english: 'funny', japanese: '面白い' }
-    }
+    hint: 'rigolo → rigolote'
   },
   {
     type: 'gender-agreement',
@@ -2324,11 +2016,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'rigolo',
     correctAnswer: 'le film rigolo',
-    hint: 'rigolo stays the same',
-    translations: {
-      noun: { english: 'film/movie', japanese: '映画' },
-      adjective: { english: 'funny', japanese: '面白い' }
-    }
+    hint: 'rigolo stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2336,11 +2024,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'fou',
     correctAnswer: 'la folle personne',
-    hint: 'fou → folle',
-    translations: {
-      noun: { english: 'person', japanese: '人' },
-      adjective: { english: 'crazy', japanese: '狂った' }
-    }
+    hint: 'fou → folle'
   },
   {
     type: 'gender-agreement',
@@ -2348,11 +2032,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'fou',
     correctAnswer: 'le fou monde',
-    hint: 'fou stays the same (becomes fol before vowel)',
-    translations: {
-      noun: { english: 'world', japanese: '世界' },
-      adjective: { english: 'crazy', japanese: '狂った' }
-    }
+    hint: 'fou stays the same (becomes fol before vowel)'
   },
   {
     type: 'gender-agreement',
@@ -2360,11 +2040,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'mou',
     correctAnswer: 'la molle jeune fille',
-    hint: 'mou → molle',
-    translations: {
-      noun: { english: 'young girl', japanese: '若い女の子' },
-      adjective: { english: 'soft', japanese: '柔らかい' }
-    }
+    hint: 'mou → molle'
   },
   {
     type: 'gender-agreement',
@@ -2372,11 +2048,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'mou',
     correctAnswer: 'le mou caractère',
-    hint: 'mou stays the same (becomes mol before vowel)',
-    translations: {
-      noun: { english: 'character', japanese: '性格' },
-      adjective: { english: 'soft', japanese: '柔らかい' }
-    }
+    hint: 'mou stays the same (becomes mol before vowel)'
   },
 
   // More number agreements with complex cases
@@ -2386,11 +2058,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'précis',
     correctAnswer: 'les détails précis',
-    hint: 'précis doesn\'t change in masculine plural',
-    translations: {
-      noun: { english: 'details', japanese: '詳細' },
-      adjective: { english: 'precise', japanese: '正確な' }
-    }
+    hint: 'précis doesn\'t change in masculine plural'
   },
   {
     type: 'number-agreement',
@@ -2398,11 +2066,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'précise',
     correctAnswer: 'les informations précises',
-    hint: 'add -s to feminine adjective',
-    translations: {
-      noun: { english: 'information', japanese: '情報' },
-      adjective: { english: 'precise', japanese: '正確な' }
-    }
+    hint: 'add -s to feminine adjective'
   },
   {
     type: 'number-agreement',
@@ -2410,11 +2074,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'français',
     correctAnswer: 'les généraux français',
-    hint: 'français doesn\'t change',
-    translations: {
-      noun: { english: 'generals', japanese: '将軍たち' },
-      adjective: { english: 'French', japanese: 'フランスの' }
-    }
+    hint: 'français doesn\'t change'
   },
   {
     type: 'number-agreement',
@@ -2422,11 +2082,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'française',
     correctAnswer: 'les armées françaises',
-    hint: 'add -s to française',
-    translations: {
-      noun: { english: 'armies', japanese: '軍隊' },
-      adjective: { english: 'French', japanese: 'フランスの' }
-    }
+    hint: 'add -s to française'
   },
   {
     type: 'number-agreement',
@@ -2434,11 +2090,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'principal',
     correctAnswer: 'les hôpitaux principaux',
-    hint: '-al → -aux in masculine plural',
-    translations: {
-      noun: { english: 'hospitals', japanese: '病院' },
-      adjective: { english: 'main', japanese: '主要な' }
-    }
+    hint: '-al → -aux in masculine plural'
   },
   {
     type: 'number-agreement',
@@ -2446,11 +2098,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'principale',
     correctAnswer: 'les principales routes',
-    hint: 'add -s to principale',
-    translations: {
-      noun: { english: 'roads', japanese: '道路' },
-      adjective: { english: 'main', japanese: '主要な' }
-    }
+    hint: 'add -s to principale'
   },
   {
     type: 'number-agreement',
@@ -2458,11 +2106,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'musical',
     correctAnswer: 'les festivals musicaux',
-    hint: '-al → -aux in plural',
-    translations: {
-      noun: { english: 'festivals', japanese: 'フェスティバル' },
-      adjective: { english: 'musical', japanese: '音楽の' }
-    }
+    hint: '-al → -aux in plural'
   },
   {
     type: 'number-agreement',
@@ -2470,11 +2114,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'musicale',
     correctAnswer: 'les émissions musicales',
-    hint: 'add -s to musicale',
-    translations: {
-      noun: { english: 'programs/emissions', japanese: '番組' },
-      adjective: { english: 'musical', japanese: '音楽の' }
-    }
+    hint: 'add -s to musicale'
   },
   {
     type: 'number-agreement',
@@ -2482,11 +2122,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'lumineux',
     correctAnswer: 'les signaux lumineux',
-    hint: '-eux doesn\'t change',
-    translations: {
-      noun: { english: 'signals', japanese: '信号' },
-      adjective: { english: 'bright', japanese: '明るい' }
-    }
+    hint: '-eux doesn\'t change'
   },
   {
     type: 'number-agreement',
@@ -2494,11 +2130,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'lumineux',
     correctAnswer: 'les panneaux lumineux',
-    hint: '-eux doesn\'t change',
-    translations: {
-      noun: { english: 'signs/panels', japanese: '看板' },
-      adjective: { english: 'bright', japanese: '明るい' }
-    }
+    hint: '-eux doesn\'t change'
   },
   {
     type: 'number-agreement',
@@ -2506,11 +2138,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'lumineuse',
     correctAnswer: 'les vitres lumineuses',
-    hint: 'add -s to lumineuse',
-    translations: {
-      noun: { english: 'windows/glass', japanese: 'ガラス' },
-      adjective: { english: 'bright', japanese: '明るい' }
-    }
+    hint: 'add -s to lumineuse'
   },
   {
     type: 'number-agreement',
@@ -2518,11 +2146,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'original',
     correctAnswer: 'les chapeaux originaux',
-    hint: '-al → -aux',
-    translations: {
-      noun: { english: 'hats', japanese: '帽子' },
-      adjective: { english: 'original', japanese: '独創的な' }
-    }
+    hint: '-al → -aux'
   },
   {
     type: 'number-agreement',
@@ -2530,11 +2154,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'originale',
     correctAnswer: 'les idées originales',
-    hint: 'add -s to originale',
-    translations: {
-      noun: { english: 'ideas', japanese: 'アイデア' },
-      adjective: { english: 'original', japanese: '独創的な' }
-    }
+    hint: 'add -s to originale'
   },
   {
     type: 'number-agreement',
@@ -2542,11 +2162,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'final',
     correctAnswer: 'les tableaux finals',
-    hint: 'final → finals (exception to -al rule)',
-    translations: {
-      noun: { english: 'paintings/tables', japanese: '絵・表' },
-      adjective: { english: 'final', japanese: '最終的な' }
-    }
+    hint: 'final → finals (exception to -al rule)'
   },
   {
     type: 'number-agreement',
@@ -2554,11 +2170,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'finale',
     correctAnswer: 'les scènes finales',
-    hint: 'add -s to finale',
-    translations: {
-      noun: { english: 'scenes', japanese: '場面' },
-      adjective: { english: 'final', japanese: '最終的な' }
-    }
+    hint: 'add -s to finale'
   },
   {
     type: 'number-agreement',
@@ -2566,11 +2178,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'naval',
     correctAnswer: 'les festivals navals',
-    hint: 'naval → navals (exception)',
-    translations: {
-      noun: { english: 'festivals', japanese: 'フェスティバル' },
-      adjective: { english: 'naval', japanese: '海軍の' }
-    }
+    hint: 'naval → navals (exception)'
   },
   {
     type: 'number-agreement',
@@ -2578,11 +2186,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'navale',
     correctAnswer: 'les forces navales',
-    hint: 'add -s to navale',
-    translations: {
-      noun: { english: 'forces', japanese: '力' },
-      adjective: { english: 'naval', japanese: '海軍の' }
-    }
+    hint: 'add -s to navale'
   },
   {
     type: 'number-agreement',
@@ -2590,11 +2194,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'banal',
     correctAnswer: 'les festivals banals',
-    hint: 'banal → banals (exception)',
-    translations: {
-      noun: { english: 'festivals', japanese: 'フェスティバル' },
-      adjective: { english: 'banal/ordinary', japanese: '平凡な' }
-    }
+    hint: 'banal → banals (exception)'
   },
   {
     type: 'number-agreement',
@@ -2602,11 +2202,7 @@ export const questions: Question[] = [
     number: 'plural',
     adjective: 'banale',
     correctAnswer: 'les remarques banales',
-    hint: 'add -s to banale',
-    translations: {
-      noun: { english: 'remarks', japanese: 'コメント' },
-      adjective: { english: 'banal/ordinary', japanese: '平凡な' }
-    }
+    hint: 'add -s to banale'
   },
 
   // Additional vocabulary-based questions
@@ -2616,11 +2212,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'scientifique',
     correctAnswer: 'la recherche scientifique',
-    hint: 'scientifique doesn\'t change',
-    translations: {
-      noun: { english: 'research', japanese: '研究' },
-      adjective: { english: 'scientific', japanese: '科学的な' }
-    }
+    hint: 'scientifique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2628,11 +2220,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'scientifique',
     correctAnswer: 'le progrès scientifique',
-    hint: 'scientifique doesn\'t change',
-    translations: {
-      noun: { english: 'progress', japanese: '進歩' },
-      adjective: { english: 'scientific', japanese: '科学的な' }
-    }
+    hint: 'scientifique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2640,11 +2228,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'technique',
     correctAnswer: 'la solution technique',
-    hint: 'technique doesn\'t change',
-    translations: {
-      noun: { english: 'solution', japanese: '解決策' },
-      adjective: { english: 'technical', japanese: '技術的な' }
-    }
+    hint: 'technique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2652,11 +2236,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'technique',
     correctAnswer: 'le support technique',
-    hint: 'technique doesn\'t change',
-    translations: {
-      noun: { english: 'support', japanese: 'サポート' },
-      adjective: { english: 'technical', japanese: '技術的な' }
-    }
+    hint: 'technique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2664,11 +2244,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'économique',
     correctAnswer: 'la politique économique',
-    hint: 'économique doesn\'t change',
-    translations: {
-      noun: { english: 'politics/policy', japanese: '政治' },
-      adjective: { english: 'economic', japanese: '経済的な' }
-    }
+    hint: 'économique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2676,11 +2252,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'économique',
     correctAnswer: 'le développement économique',
-    hint: 'économique doesn\'t change',
-    translations: {
-      noun: { english: 'development', japanese: '開発' },
-      adjective: { english: 'economic', japanese: '経済的な' }
-    }
+    hint: 'économique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2688,11 +2260,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'politique',
     correctAnswer: 'la situation politique',
-    hint: 'politique doesn\'t change',
-    translations: {
-      noun: { english: 'situation', japanese: '状況' },
-      adjective: { english: 'political', japanese: '政治的な' }
-    }
+    hint: 'politique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2700,11 +2268,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'politique',
     correctAnswer: 'le parti politique',
-    hint: 'politique doesn\'t change',
-    translations: {
-      noun: { english: 'party', japanese: '政党' },
-      adjective: { english: 'political', japanese: '政治的な' }
-    }
+    hint: 'politique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2712,11 +2276,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'historique',
     correctAnswer: 'la culture historique',
-    hint: 'historique doesn\'t change',
-    translations: {
-      noun: { english: 'culture', japanese: '文化' },
-      adjective: { english: 'historical', japanese: '歴史的な' }
-    }
+    hint: 'historique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2724,11 +2284,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'historique',
     correctAnswer: 'le monument historique',
-    hint: 'historique doesn\'t change',
-    translations: {
-      noun: { english: 'monument', japanese: '記念碑' },
-      adjective: { english: 'historical', japanese: '歴史的な' }
-    }
+    hint: 'historique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2736,11 +2292,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'géographique',
     correctAnswer: 'la nature géographique',
-    hint: 'géographique doesn\'t change',
-    translations: {
-      noun: { english: 'nature', japanese: '自然' },
-      adjective: { english: 'geographical', japanese: '地理的な' }
-    }
+    hint: 'géographique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2748,11 +2300,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'géographique',
     correctAnswer: 'l\'espace géographique',
-    hint: 'géographique doesn\'t change',
-    translations: {
-      noun: { english: 'space', japanese: '空間' },
-      adjective: { english: 'geographical', japanese: '地理的な' }
-    }
+    hint: 'géographique doesn\'t change'
   },
   {
     type: 'gender-agreement',
@@ -2760,11 +2308,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'professionnel',
     correctAnswer: 'la formation professionnelle',
-    hint: 'professionnel → professionnelle',
-    translations: {
-      noun: { english: 'training/formation', japanese: '訓練' },
-      adjective: { english: 'professional', japanese: '職業の' }
-    }
+    hint: 'professionnel → professionnelle'
   },
   {
     type: 'gender-agreement',
@@ -2772,11 +2316,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'professionnel',
     correctAnswer: 'le milieu professionnel',
-    hint: 'professionnel stays the same',
-    translations: {
-      noun: { english: 'environment/middle', japanese: '環境' },
-      adjective: { english: 'professional', japanese: '職業の' }
-    }
+    hint: 'professionnel stays the same'
   },
   {
     type: 'gender-agreement',
@@ -2784,11 +2324,7 @@ export const questions: Question[] = [
     gender: 'feminine',
     adjective: 'personnel',
     correctAnswer: 'la vie personnelle',
-    hint: 'personnel → personnelle',
-    translations: {
-      noun: { english: 'life', japanese: '人生' },
-      adjective: { english: 'personal', japanese: '個人的な' }
-    }
+    hint: 'personnel → personnelle'
   },
   {
     type: 'gender-agreement',
@@ -2796,11 +2332,7 @@ export const questions: Question[] = [
     gender: 'masculine',
     adjective: 'personnel',
     correctAnswer: 'le développement personnel',
-    hint: 'personnel stays the same',
-    translations: {
-      noun: { english: 'development', japanese: '開発' },
-      adjective: { english: 'personal', japanese: '個人的な' }
-    }
+    hint: 'personnel stays the same'
   },
 
   // More advanced subjunctive

@@ -7,10 +7,6 @@ export interface ConjugationQuestion {
   subject: string;
   correctAnswer: string;
   hint?: string;
-  verbTranslation?: {
-    english: string;
-    japanese: string;
-  };
 }
 
 export interface GenderAgreementQuestion {
@@ -20,10 +16,6 @@ export interface GenderAgreementQuestion {
   adjective: string;
   correctAnswer: string;
   hint?: string;
-  translations?: {
-    noun: { english: string; japanese: string };
-    adjective: { english: string; japanese: string };
-  };
 }
 
 export interface NumberAgreementQuestion {
@@ -33,10 +25,6 @@ export interface NumberAgreementQuestion {
   adjective: string;
   correctAnswer: string;
   hint?: string;
-  translations?: {
-    noun: { english: string; japanese: string };
-    adjective: { english: string; japanese: string };
-  };
 }
 
 export type Question = ConjugationQuestion | GenderAgreementQuestion | NumberAgreementQuestion;
