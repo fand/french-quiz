@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Quiz from "./components/Quiz";
 import "./App.css";
 
 function App() {
   const [quizMode, setQuizMode] = useState<"typing" | "multiple">("multiple");
   const [showMenu, setShowMenu] = useState(false);
-
-  const handleModeToggle = () => {
-    setQuizMode((prev) => (prev === "typing" ? "multiple" : "typing"));
-  };
 
   return (
     <div className="App">

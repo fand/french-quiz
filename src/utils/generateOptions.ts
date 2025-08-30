@@ -100,7 +100,7 @@ function generateGenderOptions(question: any): string[] {
   }
   
   // Position mistakes (adjective before/after noun)
-  const adjInAnswer = correctAnswer.split(' ').find(word => word.includes(adjective) || adjective.includes(word.replace('e', '')));
+  const adjInAnswer = correctAnswer.split(' ').find((word: string) => word.includes(adjective) || adjective.includes(word.replace('e', '')));
   if (adjInAnswer) {
     if (correctAnswer.includes(`${article} ${adjInAnswer}`)) {
       // Move adjective after noun
@@ -167,7 +167,7 @@ function generateNumberOptions(question: any): string[] {
     
   } else {
     // Singular noun - add unnecessary plural
-    const adjInAnswer = correctAnswer.split(' ').find(word => 
+    const adjInAnswer = correctAnswer.split(' ').find((word: string) => 
       word.includes(adjective) || adjective.includes(word)
     );
     
