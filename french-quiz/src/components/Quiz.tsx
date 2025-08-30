@@ -3,7 +3,11 @@ import { Question } from '../types';
 import { questions } from '../quizData';
 import { generateOptions } from '../utils/generateOptions';
 
-const Quiz: React.FC = () => {
+interface QuizProps {
+  quizMode: 'typing' | 'multiple';
+}
+
+const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState('');
   const [score, setScore] = useState(0);
@@ -12,15 +16,16 @@ const Quiz: React.FC = () => {
   const [showHint, setShowHint] = useState(false);
   const [answeredQuestions, setAnsweredQuestions] = useState<number[]>([]);
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
-  const [quizMode, setQuizMode] = useState<'typing' | 'multiple'>('typing');
   const [multipleChoiceOptions, setMultipleChoiceOptions] = useState<string[]>([]);
   const [selectedOption, setSelectedOption] = useState<string>('');
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 10);
     setShuffledQuestions(shuffled);
   }, []);
+
+  const currentQuestion = shuffledQuestions[currentQuestionIndex];
 
   useEffect(() => {
     if (currentQuestion && quizMode === 'multiple') {
@@ -28,9 +33,7 @@ const Quiz: React.FC = () => {
       setMultipleChoiceOptions(options);
       setSelectedOption('');
     }
-  }, [currentQuestionIndex, quizMode]);
-
-  const currentQuestion = shuffledQuestions[currentQuestionIndex];
+  }, [currentQuestionIndex, quizMode, currentQuestion]);
 
   const formatQuestion = (question: Question): string => {
     switch (question.type) {
@@ -80,7 +83,7 @@ const Quiz: React.FC = () => {
   };
 
   const handleRestart = () => {
-    const shuffled = [...questions].sort(() => Math.random() - 0.5);
+    const shuffled = [...questions].sort(() => Math.random() - 0.5).slice(0, 10);
     setShuffledQuestions(shuffled);
     setCurrentQuestionIndex(0);
     setScore(0);
@@ -92,14 +95,13 @@ const Quiz: React.FC = () => {
     setAnsweredQuestions([]);
   };
 
-  const handleModeToggle = () => {
-    setQuizMode(prev => prev === 'typing' ? 'multiple' : 'typing');
+  useEffect(() => {
     setUserAnswer('');
     setSelectedOption('');
     setShowResult(false);
     setIsCorrect(null);
     setShowHint(false);
-  };
+  }, [quizMode]);
 
   const handleOptionSelect = (option: string) => {
     if (!showResult) {
@@ -146,23 +148,6 @@ const Quiz: React.FC = () => {
 
   return (
     <div className="quiz-container">
-      <div className="mode-selector">
-        <button 
-          className={`mode-btn ${quizMode === 'typing' ? 'active' : ''}`}
-          onClick={() => handleModeToggle()}
-          disabled={showResult}
-        >
-          Mode Saisie
-        </button>
-        <button 
-          className={`mode-btn ${quizMode === 'multiple' ? 'active' : ''}`}
-          onClick={() => handleModeToggle()}
-          disabled={showResult}
-        >
-          Mode QCM
-        </button>
-      </div>
-
       <div className="progress">
         <div className="progress-text">
           Question {currentQuestionIndex + 1} / {shuffledQuestions.length}
