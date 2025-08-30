@@ -30,6 +30,7 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
   useEffect(() => {
     if (currentQuestion && quizMode === 'multiple') {
       const options = generateOptions(currentQuestion);
+      console.log('Generated options:', options);
       setMultipleChoiceOptions(options);
       setSelectedOption('');
     }
@@ -181,6 +182,7 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
             </>
           ) : (
             <div className="multiple-choice-options">
+              {console.log('Quiz mode:', quizMode, 'Options:', multipleChoiceOptions)}
               {multipleChoiceOptions.map((option, index) => (
                 <button
                   key={index}
