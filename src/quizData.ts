@@ -1157,5 +1157,1365 @@ export const questions: Question[] = [
     subject: 'j\'',
     correctAnswer: 'j\'ai convaincu',
     hint: 'convaincre → convaincu'
+  },
+
+  // Additional conjugation questions - subjunctive
+  {
+    type: 'conjugation',
+    verb: 'être',
+    tense: 'subjonctif présent',
+    subject: 'que je',
+    correctAnswer: 'que je sois',
+    hint: 'être subjunctive is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'avoir',
+    tense: 'subjonctif présent',
+    subject: 'que tu',
+    correctAnswer: 'que tu aies',
+    hint: 'avoir subjunctive is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'aller',
+    tense: 'subjonctif présent',
+    subject: 'qu\'il',
+    correctAnswer: 'qu\'il aille',
+    hint: 'aller subjunctive is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'faire',
+    tense: 'subjonctif présent',
+    subject: 'que nous',
+    correctAnswer: 'que nous fassions',
+    hint: 'faire subjunctive stem: fass-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'pouvoir',
+    tense: 'subjonctif présent',
+    subject: 'que vous',
+    correctAnswer: 'que vous puissiez',
+    hint: 'pouvoir subjunctive: puiss-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'savoir',
+    tense: 'subjonctif présent',
+    subject: 'qu\'ils',
+    correctAnswer: 'qu\'ils sachent',
+    hint: 'savoir subjunctive: sach-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'vouloir',
+    tense: 'subjonctif présent',
+    subject: 'que je',
+    correctAnswer: 'que je veuille',
+    hint: 'vouloir subjunctive: veuill-/voul-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'venir',
+    tense: 'subjonctif présent',
+    subject: 'qu\'elle',
+    correctAnswer: 'qu\'elle vienne',
+    hint: 'venir subjunctive: vienn-/ven-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'prendre',
+    tense: 'subjonctif présent',
+    subject: 'que nous',
+    correctAnswer: 'que nous prenions',
+    hint: 'prendre subjunctive: pren-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'boire',
+    tense: 'subjonctif présent',
+    subject: 'que tu',
+    correctAnswer: 'que tu boives',
+    hint: 'boire subjunctive: boiv-/buv-'
+  },
+
+  // More irregular verbs in present
+  {
+    type: 'conjugation',
+    verb: 'rire',
+    tense: 'présent',
+    subject: 'nous',
+    correctAnswer: 'nous rions',
+    hint: 'rire: irregular stem'
+  },
+  {
+    type: 'conjugation',
+    verb: 'sourire',
+    tense: 'présent',
+    subject: 'elle',
+    correctAnswer: 'elle sourit',
+    hint: 'sourire like rire'
+  },
+  {
+    type: 'conjugation',
+    verb: 'mourir',
+    tense: 'présent',
+    subject: 'je',
+    correctAnswer: 'je meurs',
+    hint: 'mourir: irregular stem'
+  },
+  {
+    type: 'conjugation',
+    verb: 'acquérir',
+    tense: 'présent',
+    subject: 'tu',
+    correctAnswer: 'tu acquiers',
+    hint: 'acquérir: change é to ie'
+  },
+  {
+    type: 'conjugation',
+    verb: 'conquérir',
+    tense: 'présent',
+    subject: 'il',
+    correctAnswer: 'il conquiert',
+    hint: 'conquérir like acquérir'
+  },
+  {
+    type: 'conjugation',
+    verb: 'cueillir',
+    tense: 'présent',
+    subject: 'je',
+    correctAnswer: 'je cueille',
+    hint: 'cueillir conjugates like -er verb'
+  },
+  {
+    type: 'conjugation',
+    verb: 'accueillir',
+    tense: 'présent',
+    subject: 'nous',
+    correctAnswer: 'nous accueillons',
+    hint: 'accueillir like cueillir'
+  },
+  {
+    type: 'conjugation',
+    verb: 'recueillir',
+    tense: 'passé composé',
+    subject: 'j\'',
+    correctAnswer: 'j\'ai recueilli',
+    hint: 'recueillir → recueilli'
+  },
+  {
+    type: 'conjugation',
+    verb: 'bouillir',
+    tense: 'présent',
+    subject: 'il',
+    correctAnswer: 'il bout',
+    hint: 'bouillir: irregular stem'
+  },
+  {
+    type: 'conjugation',
+    verb: 'fuir',
+    tense: 'présent',
+    subject: 'tu',
+    correctAnswer: 'tu fuis',
+    hint: 'fuir: regular in singular'
+  },
+  {
+    type: 'conjugation',
+    verb: 's\'enfuir',
+    tense: 'passé composé',
+    subject: 'elle',
+    correctAnswer: 'elle s\'est enfuie',
+    hint: 'reflexive with être + agreement'
+  },
+  {
+    type: 'conjugation',
+    verb: 'haïr',
+    tense: 'présent',
+    subject: 'je',
+    correctAnswer: 'je hais',
+    hint: 'haïr loses ï in singular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'gésir',
+    tense: 'présent',
+    subject: 'il',
+    correctAnswer: 'il gît',
+    hint: 'gésir: defective verb'
+  },
+  {
+    type: 'conjugation',
+    verb: 'ouïr',
+    tense: 'présent',
+    subject: 'j\'',
+    correctAnswer: 'j\'ois',
+    hint: 'ouïr: archaic verb'
+  },
+  {
+    type: 'conjugation',
+    verb: 'choir',
+    tense: 'passé composé',
+    subject: 'il',
+    correctAnswer: 'il est chu',
+    hint: 'choir: rare, uses être'
+  },
+
+  // More passé composé with être
+  {
+    type: 'conjugation',
+    verb: 'entrer',
+    tense: 'passé composé',
+    subject: 'nous',
+    correctAnswer: 'nous sommes entrés',
+    hint: 'entrer uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'sortir',
+    tense: 'passé composé',
+    subject: 'elles',
+    correctAnswer: 'elles sont sorties',
+    hint: 'sortir uses être + agreement'
+  },
+  {
+    type: 'conjugation',
+    verb: 'monter',
+    tense: 'passé composé',
+    subject: 'tu',
+    correctAnswer: 'tu es monté',
+    hint: 'monter uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'descendre',
+    tense: 'passé composé',
+    subject: 'je',
+    correctAnswer: 'je suis descendu',
+    hint: 'descendre uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'retourner',
+    tense: 'passé composé',
+    subject: 'il',
+    correctAnswer: 'il est retourné',
+    hint: 'retourner uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'rester',
+    tense: 'passé composé',
+    subject: 'elle',
+    correctAnswer: 'elle est restée',
+    hint: 'rester uses être + agreement'
+  },
+  {
+    type: 'conjugation',
+    verb: 'tomber',
+    tense: 'passé composé',
+    subject: 'ils',
+    correctAnswer: 'ils sont tombés',
+    hint: 'tomber uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'passer',
+    tense: 'passé composé',
+    subject: 'nous',
+    correctAnswer: 'nous sommes passés',
+    hint: 'passer can use être (intransitive)'
+  },
+  {
+    type: 'conjugation',
+    verb: 'rentrer',
+    tense: 'passé composé',
+    subject: 'vous',
+    correctAnswer: 'vous êtes rentrés',
+    hint: 'rentrer uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'intervenir',
+    tense: 'passé composé',
+    subject: 'j\'',
+    correctAnswer: 'je suis intervenu',
+    hint: 'intervenir uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'parvenir',
+    tense: 'passé composé',
+    subject: 'tu',
+    correctAnswer: 'tu es parvenu',
+    hint: 'parvenir uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'survenir',
+    tense: 'passé composé',
+    subject: 'il',
+    correctAnswer: 'il est survenu',
+    hint: 'survenir uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'advenir',
+    tense: 'passé composé',
+    subject: 'il',
+    correctAnswer: 'il est advenu',
+    hint: 'advenir uses être (impersonal)'
+  },
+  {
+    type: 'conjugation',
+    verb: 'échoir',
+    tense: 'passé composé',
+    subject: 'il',
+    correctAnswer: 'il est échu',
+    hint: 'échoir uses être (rare)'
+  },
+
+  // More reflexive verbs
+  {
+    type: 'conjugation',
+    verb: 'se laver',
+    tense: 'présent',
+    subject: 'tu',
+    correctAnswer: 'tu te laves',
+    hint: 'reflexive pronoun te'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se brosser',
+    tense: 'présent',
+    subject: 'nous',
+    correctAnswer: 'nous nous brossons',
+    hint: 'reflexive pronoun nous'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se réveiller',
+    tense: 'passé composé',
+    subject: 'je',
+    correctAnswer: 'je me suis réveillé',
+    hint: 'reflexive uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se dépêcher',
+    tense: 'impératif',
+    subject: 'tu',
+    correctAnswer: 'dépêche-toi',
+    hint: 'imperative: pronoun after verb'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se souvenir',
+    tense: 'présent',
+    subject: 'elle',
+    correctAnswer: 'elle se souvient',
+    hint: 'se souvenir like venir'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se plaindre',
+    tense: 'présent',
+    subject: 'vous',
+    correctAnswer: 'vous vous plaignez',
+    hint: 'se plaindre: reflexive'
+  },
+  {
+    type: 'conjugation',
+    verb: 's\'asseoir',
+    tense: 'présent',
+    subject: 'je',
+    correctAnswer: 'je m\'assieds',
+    hint: 's\'asseoir has two conjugations'
+  },
+  {
+    type: 'conjugation',
+    verb: 's\'en aller',
+    tense: 'présent',
+    subject: 'tu',
+    correctAnswer: 'tu t\'en vas',
+    hint: 's\'en aller: en + reflexive'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se rendre compte',
+    tense: 'passé composé',
+    subject: 'ils',
+    correctAnswer: 'ils se sont rendu compte',
+    hint: 'no agreement with compte (COD after)'
+  },
+  {
+    type: 'conjugation',
+    verb: 'se faire mal',
+    tense: 'passé composé',
+    subject: 'elle',
+    correctAnswer: 'elle s\'est fait mal',
+    hint: 'no agreement with faire + infinitive'
+  },
+
+  // Impératif forms
+  {
+    type: 'conjugation',
+    verb: 'être',
+    tense: 'impératif',
+    subject: 'tu',
+    correctAnswer: 'sois',
+    hint: 'être imperative is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'avoir',
+    tense: 'impératif',
+    subject: 'nous',
+    correctAnswer: 'ayons',
+    hint: 'avoir imperative is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'savoir',
+    tense: 'impératif',
+    subject: 'vous',
+    correctAnswer: 'sachez',
+    hint: 'savoir imperative: sach-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'vouloir',
+    tense: 'impératif',
+    subject: 'vous',
+    correctAnswer: 'veuillez',
+    hint: 'vouloir imperative: veuillez (polite)'
+  },
+  {
+    type: 'conjugation',
+    verb: 'aller',
+    tense: 'impératif',
+    subject: 'tu',
+    correctAnswer: 'va',
+    hint: 'aller imperative: va'
+  },
+
+  // Plus-que-parfait
+  {
+    type: 'conjugation',
+    verb: 'finir',
+    tense: 'plus-que-parfait',
+    subject: 'j\'',
+    correctAnswer: 'j\'avais fini',
+    hint: 'plus-que-parfait: imparfait + past participle'
+  },
+  {
+    type: 'conjugation',
+    verb: 'partir',
+    tense: 'plus-que-parfait',
+    subject: 'elle',
+    correctAnswer: 'elle était partie',
+    hint: 'partir uses être in compound tenses'
+  },
+  {
+    type: 'conjugation',
+    verb: 'voir',
+    tense: 'plus-que-parfait',
+    subject: 'nous',
+    correctAnswer: 'nous avions vu',
+    hint: 'voir → vu in compound tenses'
+  },
+  {
+    type: 'conjugation',
+    verb: 'comprendre',
+    tense: 'plus-que-parfait',
+    subject: 'tu',
+    correctAnswer: 'tu avais compris',
+    hint: 'comprendre → compris'
+  },
+  {
+    type: 'conjugation',
+    verb: 'écrire',
+    tense: 'plus-que-parfait',
+    subject: 'ils',
+    correctAnswer: 'ils avaient écrit',
+    hint: 'écrire → écrit'
+  },
+
+  // Futur antérieur
+  {
+    type: 'conjugation',
+    verb: 'manger',
+    tense: 'futur antérieur',
+    subject: 'j\'',
+    correctAnswer: 'j\'aurai mangé',
+    hint: 'futur antérieur: futur + past participle'
+  },
+  {
+    type: 'conjugation',
+    verb: 'arriver',
+    tense: 'futur antérieur',
+    subject: 'elle',
+    correctAnswer: 'elle sera arrivée',
+    hint: 'arriver uses être + agreement'
+  },
+  {
+    type: 'conjugation',
+    verb: 'dire',
+    tense: 'futur antérieur',
+    subject: 'vous',
+    correctAnswer: 'vous aurez dit',
+    hint: 'dire → dit'
+  },
+  {
+    type: 'conjugation',
+    verb: 'venir',
+    tense: 'futur antérieur',
+    subject: 'ils',
+    correctAnswer: 'ils seront venus',
+    hint: 'venir uses être'
+  },
+  {
+    type: 'conjugation',
+    verb: 'naître',
+    tense: 'futur antérieur',
+    subject: 'tu',
+    correctAnswer: 'tu seras né',
+    hint: 'naître uses être'
+  },
+
+  // Conditionnel passé
+  {
+    type: 'conjugation',
+    verb: 'aimer',
+    tense: 'conditionnel passé',
+    subject: 'j\'',
+    correctAnswer: 'j\'aurais aimé',
+    hint: 'conditionnel passé: conditionnel + past participle'
+  },
+  {
+    type: 'conjugation',
+    verb: 'aller',
+    tense: 'conditionnel passé',
+    subject: 'nous',
+    correctAnswer: 'nous serions allés',
+    hint: 'aller uses être + agreement'
+  },
+  {
+    type: 'conjugation',
+    verb: 'pouvoir',
+    tense: 'conditionnel passé',
+    subject: 'elle',
+    correctAnswer: 'elle aurait pu',
+    hint: 'pouvoir → pu'
+  },
+  {
+    type: 'conjugation',
+    verb: 'devoir',
+    tense: 'conditionnel passé',
+    subject: 'tu',
+    correctAnswer: 'tu aurais dû',
+    hint: 'devoir → dû (circumflex)'
+  },
+  {
+    type: 'conjugation',
+    verb: 'vouloir',
+    tense: 'conditionnel passé',
+    subject: 'ils',
+    correctAnswer: 'ils auraient voulu',
+    hint: 'vouloir → voulu'
+  },
+
+  // Passé simple (literary tense)
+  {
+    type: 'conjugation',
+    verb: 'parler',
+    tense: 'passé simple',
+    subject: 'il',
+    correctAnswer: 'il parla',
+    hint: 'passé simple: -er verbs use -a'
+  },
+  {
+    type: 'conjugation',
+    verb: 'finir',
+    tense: 'passé simple',
+    subject: 'elle',
+    correctAnswer: 'elle finit',
+    hint: 'passé simple: -ir verbs use -it'
+  },
+  {
+    type: 'conjugation',
+    verb: 'prendre',
+    tense: 'passé simple',
+    subject: 'ils',
+    correctAnswer: 'ils prirent',
+    hint: 'prendre passé simple: prirent'
+  },
+  {
+    type: 'conjugation',
+    verb: 'être',
+    tense: 'passé simple',
+    subject: 'je',
+    correctAnswer: 'je fus',
+    hint: 'être passé simple: fu-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'avoir',
+    tense: 'passé simple',
+    subject: 'tu',
+    correctAnswer: 'tu eus',
+    hint: 'avoir passé simple: eu-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'faire',
+    tense: 'passé simple',
+    subject: 'nous',
+    correctAnswer: 'nous fîmes',
+    hint: 'faire passé simple: fîmes'
+  },
+  {
+    type: 'conjugation',
+    verb: 'aller',
+    tense: 'passé simple',
+    subject: 'vous',
+    correctAnswer: 'vous allâtes',
+    hint: 'aller passé simple: allâtes'
+  },
+  {
+    type: 'conjugation',
+    verb: 'voir',
+    tense: 'passé simple',
+    subject: 'il',
+    correctAnswer: 'il vit',
+    hint: 'voir passé simple: vit'
+  },
+  {
+    type: 'conjugation',
+    verb: 'venir',
+    tense: 'passé simple',
+    subject: 'elle',
+    correctAnswer: 'elle vint',
+    hint: 'venir passé simple: vint'
+  },
+  {
+    type: 'conjugation',
+    verb: 'savoir',
+    tense: 'passé simple',
+    subject: 'ils',
+    correctAnswer: 'ils surent',
+    hint: 'savoir passé simple: surent'
+  },
+
+  // More complex gender agreements
+  {
+    type: 'gender-agreement',
+    noun: 'l\'histoire',
+    gender: 'feminine',
+    adjective: 'passionnant',
+    correctAnswer: 'l\'histoire passionnante',
+    hint: '-ant becomes -ante in feminine'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le roman',
+    gender: 'masculine',
+    adjective: 'passionnant',
+    correctAnswer: 'le roman passionnant',
+    hint: 'passionnant stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la réponse',
+    gender: 'feminine',
+    adjective: 'exact',
+    correctAnswer: 'la réponse exacte',
+    hint: 'exact → exacte'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le calcul',
+    gender: 'masculine',
+    adjective: 'exact',
+    correctAnswer: 'le calcul exact',
+    hint: 'exact stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la température',
+    gender: 'feminine',
+    adjective: 'bas',
+    correctAnswer: 'la basse température',
+    hint: 'bas → basse'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le prix',
+    gender: 'masculine',
+    adjective: 'bas',
+    correctAnswer: 'le bas prix',
+    hint: 'bas stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la montagne',
+    gender: 'feminine',
+    adjective: 'haut',
+    correctAnswer: 'la haute montagne',
+    hint: 'haut → haute'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le bâtiment',
+    gender: 'masculine',
+    adjective: 'haut',
+    correctAnswer: 'le haut bâtiment',
+    hint: 'haut stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la musique',
+    gender: 'feminine',
+    adjective: 'doux',
+    correctAnswer: 'la douce musique',
+    hint: 'doux → douce'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le climat',
+    gender: 'masculine',
+    adjective: 'doux',
+    correctAnswer: 'le doux climat',
+    hint: 'doux stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la voix',
+    gender: 'feminine',
+    adjective: 'faux',
+    correctAnswer: 'la fausse voix',
+    hint: 'faux → fausse'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le témoignage',
+    gender: 'masculine',
+    adjective: 'faux',
+    correctAnswer: 'le faux témoignage',
+    hint: 'faux stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la découverte',
+    gender: 'feminine',
+    adjective: 'récent',
+    correctAnswer: 'la récente découverte',
+    hint: 'récent → récente'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'l\'événement',
+    gender: 'masculine',
+    adjective: 'récent',
+    correctAnswer: 'le récent événement',
+    hint: 'récent stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la couleur',
+    gender: 'feminine',
+    adjective: 'vif',
+    correctAnswer: 'la vive couleur',
+    hint: 'vif → vive'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le débat',
+    gender: 'masculine',
+    adjective: 'vif',
+    correctAnswer: 'le vif débat',
+    hint: 'vif stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la discussion',
+    gender: 'feminine',
+    adjective: 'bref',
+    correctAnswer: 'la brève discussion',
+    hint: 'bref → brève'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le résumé',
+    gender: 'masculine',
+    adjective: 'bref',
+    correctAnswer: 'le bref résumé',
+    hint: 'bref stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la réunion',
+    gender: 'feminine',
+    adjective: 'secret',
+    correctAnswer: 'la réunion secrète',
+    hint: 'secret → secrète'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le code',
+    gender: 'masculine',
+    adjective: 'secret',
+    correctAnswer: 'le code secret',
+    hint: 'secret stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la méthode',
+    gender: 'feminine',
+    adjective: 'complet',
+    correctAnswer: 'la méthode complète',
+    hint: 'complet → complète'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'l\'ensemble',
+    gender: 'masculine',
+    adjective: 'complet',
+    correctAnswer: 'l\'ensemble complet',
+    hint: 'complet stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la robe',
+    gender: 'feminine',
+    adjective: 'violet',
+    correctAnswer: 'la robe violette',
+    hint: 'violet → violette'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le costume',
+    gender: 'masculine',
+    adjective: 'violet',
+    correctAnswer: 'le costume violet',
+    hint: 'violet stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la histoire',
+    gender: 'feminine',
+    adjective: 'rigolo',
+    correctAnswer: 'l\'histoire rigolote',
+    hint: 'rigolo → rigolote'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le film',
+    gender: 'masculine',
+    adjective: 'rigolo',
+    correctAnswer: 'le film rigolo',
+    hint: 'rigolo stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la personne',
+    gender: 'feminine',
+    adjective: 'fou',
+    correctAnswer: 'la folle personne',
+    hint: 'fou → folle'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le monde',
+    gender: 'masculine',
+    adjective: 'fou',
+    correctAnswer: 'le fou monde',
+    hint: 'fou stays the same (becomes fol before vowel)'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la jeune fille',
+    gender: 'feminine',
+    adjective: 'mou',
+    correctAnswer: 'la molle jeune fille',
+    hint: 'mou → molle'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le caractère',
+    gender: 'masculine',
+    adjective: 'mou',
+    correctAnswer: 'le mou caractère',
+    hint: 'mou stays the same (becomes mol before vowel)'
+  },
+
+  // More number agreements with complex cases
+  {
+    type: 'number-agreement',
+    noun: 'les détails',
+    number: 'plural',
+    adjective: 'précis',
+    correctAnswer: 'les détails précis',
+    hint: 'précis doesn\'t change in masculine plural'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les informations',
+    number: 'plural',
+    adjective: 'précise',
+    correctAnswer: 'les informations précises',
+    hint: 'add -s to feminine adjective'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les généraux',
+    number: 'plural',
+    adjective: 'français',
+    correctAnswer: 'les généraux français',
+    hint: 'français doesn\'t change'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les armées',
+    number: 'plural',
+    adjective: 'française',
+    correctAnswer: 'les armées françaises',
+    hint: 'add -s to française'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les hôpitaux',
+    number: 'plural',
+    adjective: 'principal',
+    correctAnswer: 'les hôpitaux principaux',
+    hint: '-al → -aux in masculine plural'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les routes',
+    number: 'plural',
+    adjective: 'principale',
+    correctAnswer: 'les principales routes',
+    hint: 'add -s to principale'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les festivals',
+    number: 'plural',
+    adjective: 'musical',
+    correctAnswer: 'les festivals musicaux',
+    hint: '-al → -aux in plural'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les émissions',
+    number: 'plural',
+    adjective: 'musicale',
+    correctAnswer: 'les émissions musicales',
+    hint: 'add -s to musicale'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les signaux',
+    number: 'plural',
+    adjective: 'lumineux',
+    correctAnswer: 'les signaux lumineux',
+    hint: '-eux doesn\'t change'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les panneaux',
+    number: 'plural',
+    adjective: 'lumineux',
+    correctAnswer: 'les panneaux lumineux',
+    hint: '-eux doesn\'t change'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les vitres',
+    number: 'plural',
+    adjective: 'lumineuse',
+    correctAnswer: 'les vitres lumineuses',
+    hint: 'add -s to lumineuse'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les chapeaux',
+    number: 'plural',
+    adjective: 'original',
+    correctAnswer: 'les chapeaux originaux',
+    hint: '-al → -aux'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les idées',
+    number: 'plural',
+    adjective: 'originale',
+    correctAnswer: 'les idées originales',
+    hint: 'add -s to originale'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les tableaux',
+    number: 'plural',
+    adjective: 'final',
+    correctAnswer: 'les tableaux finals',
+    hint: 'final → finals (exception to -al rule)'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les scènes',
+    number: 'plural',
+    adjective: 'finale',
+    correctAnswer: 'les scènes finales',
+    hint: 'add -s to finale'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les festivals',
+    number: 'plural',
+    adjective: 'naval',
+    correctAnswer: 'les festivals navals',
+    hint: 'naval → navals (exception)'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les forces',
+    number: 'plural',
+    adjective: 'navale',
+    correctAnswer: 'les forces navales',
+    hint: 'add -s to navale'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les festivals',
+    number: 'plural',
+    adjective: 'banal',
+    correctAnswer: 'les festivals banals',
+    hint: 'banal → banals (exception)'
+  },
+  {
+    type: 'number-agreement',
+    noun: 'les remarques',
+    number: 'plural',
+    adjective: 'banale',
+    correctAnswer: 'les remarques banales',
+    hint: 'add -s to banale'
+  },
+
+  // Additional vocabulary-based questions
+  {
+    type: 'gender-agreement',
+    noun: 'la recherche',
+    gender: 'feminine',
+    adjective: 'scientifique',
+    correctAnswer: 'la recherche scientifique',
+    hint: 'scientifique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le progrès',
+    gender: 'masculine',
+    adjective: 'scientifique',
+    correctAnswer: 'le progrès scientifique',
+    hint: 'scientifique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la solution',
+    gender: 'feminine',
+    adjective: 'technique',
+    correctAnswer: 'la solution technique',
+    hint: 'technique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le support',
+    gender: 'masculine',
+    adjective: 'technique',
+    correctAnswer: 'le support technique',
+    hint: 'technique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la politique',
+    gender: 'feminine',
+    adjective: 'économique',
+    correctAnswer: 'la politique économique',
+    hint: 'économique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le développement',
+    gender: 'masculine',
+    adjective: 'économique',
+    correctAnswer: 'le développement économique',
+    hint: 'économique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la situation',
+    gender: 'feminine',
+    adjective: 'politique',
+    correctAnswer: 'la situation politique',
+    hint: 'politique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le parti',
+    gender: 'masculine',
+    adjective: 'politique',
+    correctAnswer: 'le parti politique',
+    hint: 'politique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la culture',
+    gender: 'feminine',
+    adjective: 'historique',
+    correctAnswer: 'la culture historique',
+    hint: 'historique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le monument',
+    gender: 'masculine',
+    adjective: 'historique',
+    correctAnswer: 'le monument historique',
+    hint: 'historique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la nature',
+    gender: 'feminine',
+    adjective: 'géographique',
+    correctAnswer: 'la nature géographique',
+    hint: 'géographique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'l\'espace',
+    gender: 'masculine',
+    adjective: 'géographique',
+    correctAnswer: 'l\'espace géographique',
+    hint: 'géographique doesn\'t change'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la formation',
+    gender: 'feminine',
+    adjective: 'professionnel',
+    correctAnswer: 'la formation professionnelle',
+    hint: 'professionnel → professionnelle'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le milieu',
+    gender: 'masculine',
+    adjective: 'professionnel',
+    correctAnswer: 'le milieu professionnel',
+    hint: 'professionnel stays the same'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'la vie',
+    gender: 'feminine',
+    adjective: 'personnel',
+    correctAnswer: 'la vie personnelle',
+    hint: 'personnel → personnelle'
+  },
+  {
+    type: 'gender-agreement',
+    noun: 'le développement',
+    gender: 'masculine',
+    adjective: 'personnel',
+    correctAnswer: 'le développement personnel',
+    hint: 'personnel stays the same'
+  },
+
+  // More advanced subjunctive
+  {
+    type: 'conjugation',
+    verb: 'falloir',
+    tense: 'subjonctif présent',
+    subject: 'qu\'il',
+    correctAnswer: 'qu\'il faille',
+    hint: 'falloir subjunctive is irregular'
+  },
+  {
+    type: 'conjugation',
+    verb: 'valoir',
+    tense: 'subjonctif présent',
+    subject: 'que cela',
+    correctAnswer: 'que cela vaille',
+    hint: 'valoir subjunctive: vaill-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'pleuvoir',
+    tense: 'subjonctif présent',
+    subject: 'qu\'il',
+    correctAnswer: 'qu\'il pleuve',
+    hint: 'pleuvoir subjunctive: pleuve'
+  },
+  {
+    type: 'conjugation',
+    verb: 'mourir',
+    tense: 'subjonctif présent',
+    subject: 'que je',
+    correctAnswer: 'que je meure',
+    hint: 'mourir subjunctive: meur-/mour-'
+  },
+  {
+    type: 'conjugation',
+    verb: 'acquérir',
+    tense: 'subjonctif présent',
+    subject: 'qu\'elle',
+    correctAnswer: 'qu\'elle acquière',
+    hint: 'acquérir subjunctive: acquier-'
+  },
+
+  // Past subjunctive
+  {
+    type: 'conjugation',
+    verb: 'finir',
+    tense: 'subjonctif passé',
+    subject: 'que j\'',
+    correctAnswer: 'que j\'aie fini',
+    hint: 'subjonctif passé: subjunctive avoir/être + past participle'
+  },
+  {
+    type: 'conjugation',
+    verb: 'partir',
+    tense: 'subjonctif passé',
+    subject: 'qu\'elle',
+    correctAnswer: 'qu\'elle soit partie',
+    hint: 'partir uses être in compound forms'
+  },
+  {
+    type: 'conjugation',
+    verb: 'comprendre',
+    tense: 'subjonctif passé',
+    subject: 'que nous',
+    correctAnswer: 'que nous ayons compris',
+    hint: 'comprendre → compris'
+  },
+
+  // Gérondif and participe présent
+  {
+    type: 'conjugation',
+    verb: 'marcher',
+    tense: 'gérondif',
+    subject: '',
+    correctAnswer: 'en marchant',
+    hint: 'gérondif: en + present participle'
+  },
+  {
+    type: 'conjugation',
+    verb: 'finir',
+    tense: 'participe présent',
+    subject: '',
+    correctAnswer: 'finissant',
+    hint: 'participe présent: -ant ending'
+  },
+  {
+    type: 'conjugation',
+    verb: 'être',
+    tense: 'participe présent',
+    subject: '',
+    correctAnswer: 'étant',
+    hint: 'être participe présent: étant'
+  },
+  {
+    type: 'conjugation',
+    verb: 'avoir',
+    tense: 'participe présent',
+    subject: '',
+    correctAnswer: 'ayant',
+    hint: 'avoir participe présent: ayant'
+  },
+  {
+    type: 'conjugation',
+    verb: 'savoir',
+    tense: 'participe présent',
+    subject: '',
+    correctAnswer: 'sachant',
+    hint: 'savoir participe présent: sachant'
+  },
+
+  // More complex cases
+  {
+    type: 'conjugation',
+    verb: 'apercevoir',
+    tense: 'présent',
+    subject: 'je',
+    correctAnswer: 'j\'aperçois',
+    hint: 'apercevoir like recevoir'
+  },
+  {
+    type: 'conjugation',
+    verb: 'concevoir',
+    tense: 'futur simple',
+    subject: 'nous',
+    correctAnswer: 'nous concevrons',
+    hint: 'concevoir regular future'
+  },
+  {
+    type: 'conjugation',
+    verb: 'décevoir',
+    tense: 'conditionnel',
+    subject: 'tu',
+    correctAnswer: 'tu décevrais',
+    hint: 'décevoir regular conditional'
+  },
+  {
+    type: 'conjugation',
+    verb: 'percevoir',
+    tense: 'passé composé',
+    subject: 'ils',
+    correctAnswer: 'ils ont perçu',
+    hint: 'percevoir → perçu'
+  },
+  {
+    type: 'conjugation',
+    verb: 'émouvoir',
+    tense: 'présent',
+    subject: 'cela',
+    correctAnswer: 'cela émeut',
+    hint: 'émouvoir like mouvoir'
+  },
+  {
+    type: 'conjugation',
+    verb: 'promouvoir',
+    tense: 'passé composé',
+    subject: 'elle',
+    correctAnswer: 'elle a promu',
+    hint: 'promouvoir → promu'
+  },
+  {
+    type: 'conjugation',
+    verb: 'asseoir',
+    tense: 'présent',
+    subject: 'nous',
+    correctAnswer: 'nous asseyons',
+    hint: 'asseoir: two possible conjugations'
+  },
+  {
+    type: 'conjugation',
+    verb: 'rasseoir',
+    tense: 'futur simple',
+    subject: 'je',
+    correctAnswer: 'je rassiérai',
+    hint: 'rasseoir future form'
+  },
+  {
+    type: 'conjugation',
+    verb: 'surseoir',
+    tense: 'présent',
+    subject: 'ils',
+    correctAnswer: 'ils surseoient',
+    hint: 'surseoir: irregular'
   }
 ];
