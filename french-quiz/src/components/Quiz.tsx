@@ -150,8 +150,11 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
   return (
     <div className="quiz-container">
       <div className="progress">
-        <div className="progress-text">
-          Question {currentQuestionIndex + 1} / {shuffledQuestions.length}
+        <div className="progress-header">
+          <div className="score-small">Score: {score}</div>
+          <div className="progress-text">
+            Question {currentQuestionIndex + 1} / {shuffledQuestions.length}
+          </div>
         </div>
         <div className="progress-bar">
           <div 
@@ -160,8 +163,6 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
           />
         </div>
       </div>
-
-      <div className="score">Score: {score}</div>
 
       <div className="question-card">
         <h3 className="question">{formatQuestion(currentQuestion)}</h3>
@@ -246,11 +247,13 @@ const Quiz: React.FC<QuizProps> = ({ quizMode }) => {
           </div>
         )}
         
-        {showResult && quizMode === 'multiple' && (
-          <div className="result-message">
-            {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
-          </div>
-        )}
+        <div className="result-message-container">
+          {showResult && quizMode === 'multiple' && (
+            <div className="result-message">
+              {isCorrect ? '✅ Correct!' : '❌ Incorrect'}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
