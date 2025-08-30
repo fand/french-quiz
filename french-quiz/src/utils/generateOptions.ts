@@ -4,51 +4,67 @@ function generateConjugationOptions(question: any): string[] {
   const { verb, subject, tense, correctAnswer } = question;
   const options = [correctAnswer];
   
-  const verbRoot = verb.replace(/er$|ir$|re$/, '');
-  const wrongEndings = {
-    'je': ['e', 'es', 'ons', 'ez', 'ent'],
-    'tu': ['s', 'e', 'ons', 'ez', 'ent'], 
-    'il': ['e', 's', 'ons', 'ez', 'ent'],
-    'elle': ['e', 's', 'ons', 'ez', 'ent'],
-    'nous': ['e', 's', 't', 'ez', 'ent'],
-    'vous': ['e', 's', 't', 'ons', 'ent'],
-    'ils': ['e', 's', 't', 'ons', 'ez'],
-    'elles': ['e', 's', 't', 'ons', 'ez'],
-    'j\'': ['e', 'es', 'ons', 'ez', 'ent']
+  // Realistic wrong answers for common verbs
+  const commonMistakes: Record<string, string[]> = {
+    'je suis': ['j\'ai', 'je es', 'je suis été'],
+    'nous avons': ['nous sommes', 'nous avez', 'nous avoir'],
+    'ils vont': ['ils va', 'ils allons', 'ils sont allés'],
+    'vous faites': ['vous faisez', 'vous fait', 'vous faisons'],
+    'elle peut': ['elle peux', 'elle pouvoir', 'elle pouvez'],
+    'tu viens': ['tu venez', 'tu vient', 'tu es venu'],
+    'j\'ai parlé': ['je suis parlé', 'j\'ai parler', 'je parlé'],
+    'nous finissons': ['nous finons', 'nous finissez', 'nous finirons'],
+    'ils prennent': ['ils prends', 'ils prenons', 'ils prendent'],
+    'je verrai': ['je verrais', 'je vois', 'je voir'],
+    'je mange': ['je mangons', 'je manger', 'je mangé'],
+    'nous commençons': ['nous commencez', 'nous commencer', 'nous commençons'],
+    'tu dois': ['tu devoir', 'tu devez', 'tu doit'],
+    'ils savent': ['ils sais', 'ils savons', 'ils savoir'],
+    'elle veut': ['elle veux', 'elle voulez', 'elle vouloir'],
+    'je mets': ['je mettre', 'je met', 'je mettez'],
+    'vous dites': ['vous disez', 'vous dire', 'vous dit'],
+    'nous écrivons': ['nous écrirons', 'nous écrivez', 'nous écrire'],
+    'tu lis': ['tu lire', 'tu lisez', 'tu lit'],
+    'ils boivent': ['ils bois', 'ils burent', 'ils boire']
   };
-  
-  const endings = wrongEndings[subject] || ['e', 's', 't'];
-  
-  if (tense === 'présent') {
-    endings.forEach(ending => {
-      const option = `${subject} ${verbRoot}${ending}`;
-      if (option !== correctAnswer && options.length < 4) {
-        options.push(option);
-      }
-    });
-  } else if (tense === 'passé composé') {
-    const auxOptions = ['ai', 'as', 'a', 'avons', 'avez', 'ont', 'suis', 'es', 'est'];
-    auxOptions.forEach(aux => {
-      const option = `${subject}${aux} ${verb.replace(/er$/, 'é')}`;
-      if (option !== correctAnswer && options.length < 4) {
-        options.push(option);
-      }
-    });
-  } else if (tense === 'futur simple') {
-    const futureEndings = ['ai', 'as', 'a', 'ons', 'ez', 'ont'];
-    futureEndings.forEach(ending => {
-      const option = `${subject} ${verb}${ending}`;
-      if (option !== correctAnswer && options.length < 4) {
-        options.push(option);
+
+  if (commonMistakes[correctAnswer]) {
+    commonMistakes[correctAnswer].forEach(mistake => {
+      if (options.length < 4) {
+        options.push(mistake);
       }
     });
   }
   
+  // Fill remaining slots with plausible errors if needed
   while (options.length < 4) {
-    const randomEnding = endings[Math.floor(Math.random() * endings.length)];
-    const option = `${subject} ${verbRoot}${randomEnding}`;
-    if (!options.includes(option)) {
-      options.push(option);
+    let wrongOption = '';
+    
+    if (tense === 'présent') {
+      // Common present tense mistakes
+      const mistakes = [
+        `${subject} ${verb}`, // infinitive mistake
+        correctAnswer.replace(/s$/, ''), // remove final s
+        correctAnswer.replace(/ent$/, 'e'), // plural/singular confusion
+        correctAnswer + 's' // add extra s
+      ];
+      
+      wrongOption = mistakes[Math.floor(Math.random() * mistakes.length)];
+    } else if (tense === 'passé composé') {
+      // Wrong auxiliary or participle
+      const auxMistakes = [
+        correctAnswer.replace('ai ', 'suis '),
+        correctAnswer.replace('est ', 'a '),
+        correctAnswer.replace('é', 'er')
+      ];
+      wrongOption = auxMistakes[Math.floor(Math.random() * auxMistakes.length)];
+    }
+    
+    if (wrongOption && !options.includes(wrongOption)) {
+      options.push(wrongOption);
+    } else {
+      // Fallback: add a simple variation
+      options.push(`${subject} ${verb.slice(0, -1)}e`);
     }
   }
   
@@ -59,37 +75,65 @@ function generateGenderOptions(question: any): string[] {
   const { noun, adjective, correctAnswer } = question;
   const options = [correctAnswer];
   
-  const variations: Record<string, string[]> = {
-    'nouveau': ['le nouveau', 'la nouvelle', 'le nouvel', 'la nouveau'],
-    'beau': ['le beau', 'la belle', 'le bel', 'la beau'],
-    'grand': ['le grand', 'la grande', 'le grande', 'la grand'],
-    'blanc': ['le blanc', 'la blanche', 'le blanche', 'la blanc'],
-    'heureux': ['le heureux', 'la heureuse', 'le heureuse', 'la heureux'],
-    'sportif': ['le sportif', 'la sportive', 'le sportive', 'la sportif'],
-    'intéressant': ['le intéressant', 'la intéressante', 'le intéressante', 'la intéressant']
-  };
+  // Generate realistic gender agreement mistakes
+  const article = noun.split(' ')[0];
+  const nounPart = noun.substring(article.length + 1);
   
-  const nounBase = noun.replace(/^(le |la |les |l')/, '');
-  const defaultVariations = [
-    `le ${adjective} ${nounBase}`,
-    `la ${adjective} ${nounBase}`,
-    `le ${adjective}e ${nounBase}`,
-    `la ${adjective}e ${nounBase}`,
-    `le ${nounBase} ${adjective}`,
-    `la ${nounBase} ${adjective}`,
-    `le ${nounBase} ${adjective}e`,
-    `la ${nounBase} ${adjective}e`
-  ];
+  // Common mistakes: wrong gender agreement
+  const commonMistakes = [];
   
-  const possibleOptions = variations[adjective] ? 
-    variations[adjective].map(v => v + ' ' + nounBase) : 
-    defaultVariations;
+  if (correctAnswer.includes('la ') && adjective !== correctAnswer.split(' ').pop()) {
+    // If correct is feminine, add masculine version
+    const masculineAdj = adjective;
+    commonMistakes.push(`le ${masculineAdj} ${nounPart}`);
+    commonMistakes.push(`la ${masculineAdj} ${nounPart}`); // no agreement
+  } else if (correctAnswer.includes('le ') && adjective !== correctAnswer.split(' ').pop()) {
+    // If correct is masculine, add feminine version
+    let feminineName = adjective + 'e';
+    if (adjective.endsWith('eux')) feminineName = adjective.replace('eux', 'euse');
+    if (adjective.endsWith('if')) feminineName = adjective.replace('if', 'ive');
+    if (adjective.endsWith('er')) feminineName = adjective.replace('er', 'ère');
+    if (adjective.endsWith('eau')) feminineName = adjective.replace('eau', 'elle');
+    
+    commonMistakes.push(`la ${feminineName} ${nounPart}`);
+    commonMistakes.push(`le ${feminineName} ${nounPart}`); // wrong article
+  }
   
-  possibleOptions.forEach(option => {
-    if (option !== correctAnswer && !options.includes(option) && options.length < 4) {
-      options.push(option);
+  // Position mistakes (adjective before/after noun)
+  const adjInAnswer = correctAnswer.split(' ').find(word => word.includes(adjective) || adjective.includes(word.replace('e', '')));
+  if (adjInAnswer) {
+    if (correctAnswer.includes(`${article} ${adjInAnswer}`)) {
+      // Move adjective after noun
+      commonMistakes.push(`${article} ${nounPart} ${adjInAnswer}`);
+    } else {
+      // Move adjective before noun  
+      commonMistakes.push(`${article} ${adjInAnswer} ${nounPart}`);
+    }
+  }
+  
+  commonMistakes.forEach(mistake => {
+    if (!options.includes(mistake) && options.length < 4) {
+      options.push(mistake);
     }
   });
+  
+  // Fill remaining with systematic variations
+  while (options.length < 4) {
+    const variations = [
+      `${article} ${adjective}s ${nounPart}`, // add plural s
+      `${article} ${nounPart} ${adjective}s`, // add plural s, different position
+      correctAnswer.replace('le ', 'la ').replace('la ', 'le ') // swap articles
+    ];
+    
+    for (const variation of variations) {
+      if (!options.includes(variation) && options.length < 4) {
+        options.push(variation);
+        break;
+      }
+    }
+    
+    if (options.length < 4) break; // prevent infinite loop
+  }
   
   return options.slice(0, 4);
 }
@@ -98,24 +142,77 @@ function generateNumberOptions(question: any): string[] {
   const { noun, adjective, correctAnswer } = question;
   const options = [correctAnswer];
   
-  const nounBase = noun.replace(/^(le |la |les |l')/, '');
-  const singularArticle = noun.startsWith('les ') ? 'le' : noun.split(' ')[0];
+  const article = noun.split(' ')[0];
+  const nounPart = noun.substring(article.length + 1);
   
-  const variations = [
-    `${noun} ${adjective}`,
-    `${noun} ${adjective}s`,
-    `${noun} ${adjective}x`,
-    `${singularArticle} ${adjective} ${nounBase.replace(/s$|x$/, '')}`,
-    `les ${adjective}s ${nounBase}`,
-    `les ${adjective}x ${nounBase}`,
-    `les ${adjective} ${nounBase}`
-  ];
+  // Common number agreement mistakes
+  const commonMistakes = [];
   
-  variations.forEach(option => {
-    if (option !== correctAnswer && !options.includes(option) && options.length < 4) {
-      options.push(option);
+  if (noun.startsWith('les ')) {
+    // Plural noun - common mistakes
+    const singularNoun = nounPart.replace(/s$|x$/, '');
+    const singularArticle = article === 'les' ? 'le' : article; 
+    
+    // Forget to make adjective plural
+    commonMistakes.push(`les ${adjective} ${nounPart}`);
+    commonMistakes.push(`les ${nounPart} ${adjective}`);
+    
+    // Use singular form entirely  
+    commonMistakes.push(`${singularArticle} ${adjective} ${singularNoun}`);
+    
+    // Wrong plural ending (-s instead of -x, etc.)
+    if (correctAnswer.includes('eaux') || correctAnswer.includes('aux')) {
+      commonMistakes.push(correctAnswer.replace('eaux', 'eaus').replace('aux', 'als'));
+    }
+    
+  } else {
+    // Singular noun - add unnecessary plural
+    const adjInAnswer = correctAnswer.split(' ').find(word => 
+      word.includes(adjective) || adjective.includes(word)
+    );
+    
+    if (adjInAnswer) {
+      // Add unnecessary s to adjective
+      commonMistakes.push(correctAnswer.replace(adjInAnswer, adjInAnswer + 's'));
+      
+      // Change to plural form
+      const pluralNoun = nounPart + 's';
+      const pluralAdj = adjInAnswer + 's';
+      commonMistakes.push(`les ${pluralAdj} ${pluralNoun}`);
+      commonMistakes.push(`les ${pluralNoun} ${pluralAdj}`);
+    }
+  }
+  
+  // Position mistakes
+  const parts = correctAnswer.split(' ');
+  if (parts.length >= 3) {
+    // Swap adjective position
+    const [art, first, second] = parts;
+    commonMistakes.push(`${art} ${second} ${first}`);
+  }
+  
+  commonMistakes.forEach(mistake => {
+    if (!options.includes(mistake) && options.length < 4) {
+      options.push(mistake);
     }
   });
+  
+  // Fill remaining slots
+  while (options.length < 4) {
+    const fillers = [
+      correctAnswer + 's', // add extra s
+      correctAnswer.replace('s ', ' '), // remove s from wrong place
+      correctAnswer.replace('les', 'des'), // wrong article
+    ];
+    
+    for (const filler of fillers) {
+      if (!options.includes(filler) && options.length < 4) {
+        options.push(filler);
+        break;
+      }
+    }
+    if (options.length >= 4) break;
+  }
   
   return options.slice(0, 4);
 }
